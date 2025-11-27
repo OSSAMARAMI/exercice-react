@@ -1,6 +1,6 @@
 const nouvNums = nums.map(n => n * 3);
 console.log(nouvNums); // [6, 15, 24, 21, 9]
--------
+//-------
 const personnes = [
   { nom: "Rami", age: 33, estMember: true },
   { nom: "Fatihi", age: 24, estMember: false },
@@ -13,7 +13,7 @@ const nomAgés = personnes
   .map(p => p.nom);                    // récupérer juste les noms
 
 console.log(nomAgés); // ["Rami", "Chakib"]
------------
+//-----------
 const inscriptions = [
   {id:10, nom:'Rami', filiere:'DEV'},
   {id:11, nom:'Kamali', filiere:'DEV'},
