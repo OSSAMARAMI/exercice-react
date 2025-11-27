@@ -9,10 +9,10 @@ const personnes = [
 ];
 
 const nomAgés = personnes
-  .filter(p => p.estMember === true)   // garder seulement les membres
-  .map(p => p.nom);                    // récupérer juste les noms
+  .filter(p => p.estMember === true)   
+  .map(p => p.nom);                    
 
-console.log(nomAgés); // ["Rami", "Chakib"]
+console.log(nomAgés); 
 //-----------
 const inscriptions = [
   {id:10, nom:'Rami', filiere:'DEV'},
