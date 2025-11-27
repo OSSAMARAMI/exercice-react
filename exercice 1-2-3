@@ -1,0 +1,33 @@
+const nouvNums = nums.map(n => n * 3);
+console.log(nouvNums); // [6, 15, 24, 21, 9]
+-------
+const personnes = [
+  { nom: "Rami", age: 33, estMember: true },
+  { nom: "Fatihi", age: 24, estMember: false },
+  { nom: "Chakib", age: 45, estMember: true },
+  { nom: "Mounir", age: 37, estMember: false },
+];
+
+const nomAgés = personnes
+  .filter(p => p.estMember === true)   // garder seulement les membres
+  .map(p => p.nom);                    // récupérer juste les noms
+
+console.log(nomAgés); // ["Rami", "Chakib"]
+-----------
+const inscriptions = [
+  {id:10, nom:'Rami', filiere:'DEV'},
+  {id:11, nom:'Kamali', filiere:'DEV'},
+  {id:12, nom:'Fahmi', filiere:'DEV'},
+  {id:13, nom:'Chaouki', filiere:'DEV'}
+];
+
+function ajouterInscription(list, nouvelleInscription) {
+    return [...list, nouvelleInscription];
+}
+
+const nouvelle = { id:14, nom:'Amine', filiere:'DEV' };
+
+const nouvellesInscriptions = ajouterInscription(inscriptions, nouvelle);
+
+console.log(nouvellesInscriptions);
+
